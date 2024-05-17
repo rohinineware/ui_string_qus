@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Capitalize</h1>
+        <input type="text" placeholder="Enter any sentence" id="input">
+        <button id="btn">Capitalize</button>
+        <button id="reverse">Reverse</button>
+        <button id="wordreverse">Reverse word by word</button>
+    </div>
+    <div id="output">
+
+    </div>
+    <script>
+        let input=document.getElementById("input");
+        let btn=document.getElementById("btn");
+        let reversebtn=document.getElementById("reverse");
+        let wordreversed=document.getElementById("wordreverse");
+
+        let output=document.getElementById('output');
+
+        btn.addEventListener("click",()=>{
+                let inputvalue=input.value ;
+                let res=capitalize(inputvalue);
+                output.innerHTML=`<h1>${res}</h1>`;
+        })
+ 
+
+        reversebtn.addEventListener("click",()=>{
+                let inputvalue=input.value;
+                let res=reverse(inputvalue);
+                output.innerHTML=`<h1>${res}</h1>`;
+        })
+
+
+        wordreversed.addEventListener("click",()=>{
+                let inputvalue=input.value;
+                let res=wordreverse(inputvalue);
+                output.innerHTML=`<h1>${res}</h1>`;
+        })
+
+
+    function capitalize(str) {
+        let s='';
+        for(let i = 0; i < str.length; i++){
+            if(i == 0 || str[i - 1] == ' '){
+                s=s+str[i].toUpperCase();
+            }
+            else{
+                s=s+str[i];
+            }
+        }
+        return s;
+    }
+
+
+    function reverse(a){
+        let b=''
+        i=a.length-1;
+        while(i>=0){
+            b+=a[i]
+            i=i-1
+        }
+        return b
+    }
+
+   
+    function wordreverse(input) {
+        let a = input.split(" ").reverse().join(" ");
+        return a;
+    }
+
+        
+    </script>
+</body>
+</html>
