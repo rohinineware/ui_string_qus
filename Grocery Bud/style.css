@@ -1,0 +1,164 @@
+
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background: rgb(214, 211, 211);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main-content{
+    background: white;
+    padding: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.main-content:hover{
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.alert{
+    margin-bottom: 1rem;
+    height: 1.25rem;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    font-size: 0.75rem;
+    border-radius: 0.25rem;
+    letter-spacing: 0.2rem;
+    text-transform: capitalize;
+}
+
+.alert-danger{
+    color: #721c24;
+    background: #f8d7da;
+}
+
+.alert-success{
+    color: #155724;
+    background: #d4edda;
+}
+
+.grocery-form h3{
+    color: black;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.control{
+    display: flex;
+    justify-content: center;
+}
+
+.submit-btn{
+    background-color: rgb(165, 213, 248);
+    border-color: transparent;
+    flex: 0 0 9rem;
+    display: grid;
+    align-items: center;
+    padding: 0.25rem;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-size: 0.85rem;
+}
+
+.submit-btn:hover{
+    background: #49a6e9;
+    color: white;
+}
+
+.container{
+    margin-top: 2rem;
+    visibility: hidden;
+}
+
+.show-container{
+    visibility: visible;
+}
+
+.grocery-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    padding: 0.25rem 0.25rem;
+    border-radius: 1rem;
+    text-transform: capitalize;
+}
+
+.grocery-item:hover{
+    background: rgb(211, 202, 202);
+    color: white;
+}
+
+.edit-btn,
+.delete-btn{
+    background: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    font-size: 0.75rem;
+    margin: 0 0.15rem;
+}
+
+.edit-btn{
+    color: rgb(45, 155, 45);
+}
+
+.edit-btn:hover{
+    color: green;
+}
+
+.delete-btn{
+    color: rgb(231, 116, 116);
+}
+
+.delete-btn:hover{
+    color: red;
+}
+
+.clear-btn{
+    text-transform: capitalize;
+    display: grid;
+    place-items: center;
+    background: transparent;
+    border-color: transparent;
+    color: red;
+    margin: 0 auto;
+    font-size: 0.85rem;
+    letter-spacing: 0.2rem;
+    cursor: pointer;
+    margin-top: 1.25rem;
+}
+
+.clear-btn:hover{
+    color: rgb(226, 25, 25);
+}
+
+#grocery{
+    padding: 0.25rem;
+    padding-left: 1rem;
+    background: grey;
+    border-radius: 2rem;
+    border-color: transparent;
+    font-size: 1rem;
+    flex: 1 0 auto;
+    color: white;
+}
+
+#grocery::placeholder{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
