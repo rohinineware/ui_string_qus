@@ -1,0 +1,122 @@
+
+/* fonts */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background: rgb(241, 245, 249);
+    color: rgb(16, 42, 66);
+    line-height: 1.5;
+    font-size: 0.875rem;
+
+
+
+}
+
+h2{
+    letter-spacing: 0.4rem;
+}
+
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+main {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+nav{
+    height: 3rem;
+    background: white;
+    display: grid;
+    align-items: center;
+    box-shadow:steelblue;
+}
+
+.nav-center{
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 620px;
+}
+
+.nav-center h4{
+    margin-bottom: 0;
+    color: rgb(73, 166, 233);
+}
+
+
+.nav-links{
+    display: flex;
+}
+
+nav a{
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 1rem;
+    color: rgb(6, 49, 81); 
+    letter-spacing: 0.1rem; 
+    margin-right: 1rem;
+}
+
+nav a:hover{
+    color: rgb(73, 166, 233);
+}
+
+.container {
+  text-align: center;
+}
+
+.container h2 {
+  background: black;
+  color: white;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  margin-bottom: 2.5rem;
+  height: 4rem;
+  width: 45rem;
+  font-size: 2.5rem;
+  
+  
+}
+
+
+.color {
+  color: rgb(73, 166, 233);
+}
+
+
+#btn{
+    background: rgb(241, 245, 249);
+    border-radius: 0.25rem;
+    height: 2rem;
+    width: 5rem;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    letter-spacing: 0.1rem;
+    display: inline-block;
+}
+
+
+.btn-hero:hover {
+    color: white;
+    background: black;
+}
+
